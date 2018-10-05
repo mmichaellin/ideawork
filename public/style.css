@@ -1,0 +1,107 @@
+@import url("carousel.css");
+
+@font-face {
+  font-family: ACaslon;
+  src: url("./ACaslonPro-Regular.otf") format("opentype");
+  font-family: Springville;
+  src: url("./Springville-Regular3.otf") format("opentype");
+}
+
+
+body {
+  margin: 0;
+  background: white;
+}
+
+.navbar {
+  background: white;
+  padding: 5vh 12vw;
+  font-size: 11px;
+}
+
+.navlink {
+  text-decoration: none;
+  float: right;
+  margin: 1vh 3vw 0vh 0vw;
+  font-family: Arial;
+  padding: 3px 0px;
+  color: gray;
+}
+
+.logo {
+  height: 5vh;
+}
+
+.hamburger {
+  height: 2vh;
+  float: right;
+  margin: 1.1vh 3vw 0vh 0vw;
+}
+
+.footer {
+  background: white;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 12vh;
+  text-align: center;
+  padding: 6vh 0vw 0vh 0vw;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.footerlink {
+  margin: 0vh 0.5vw;
+  padding: 3px 0px;
+  color: black;
+}
+
+@-webkit-keyframes ripple {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes ripple {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underline:hover:before, .underline:focus:before, .underline:active:before {
+  left: 0;
+  right: 0;
+}
