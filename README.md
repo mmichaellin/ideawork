@@ -1,6 +1,7 @@
 # Ideawork Code Test
 
 An example of a site built from a PSD file with React and deployed with Firebase
+Demo: https://ideawork-e166d.firebaseapp.com/
 
 ## Instructions
 
