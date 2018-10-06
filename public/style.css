@@ -7,7 +7,6 @@
   src: url("./Springville-Regular3.otf") format("opentype");
 }
 
-
 body {
   margin: 0;
   background: white;
@@ -57,25 +56,6 @@ body {
   color: black;
 }
 
-@-webkit-keyframes ripple {
-  100% {
-    top: -12px;
-    right: -12px;
-    bottom: -12px;
-    left: -12px;
-    opacity: 0;
-  }
-}
-@keyframes ripple {
-  100% {
-    top: -12px;
-    right: -12px;
-    bottom: -12px;
-    left: -12px;
-    opacity: 0;
-  }
-}
-
 .underline {
   display: inline-block;
   vertical-align: middle;
@@ -104,4 +84,52 @@ body {
 .underline:hover:before, .underline:focus:before, .underline:active:before {
   left: 0;
   right: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  column-count: 3;
+  column-gap: 1em;
+  padding: 10vh 10vw 0vh 0vw;
+}
+
+.card {
+  background-color: white;
+  display: inline-block;
+  margin: 0vh 0vw 5vh 5vw;
+  width: 100%;
+  border-bottom: 2px solid rgb(222, 222, 222);
+}
+
+.article-img {
+  width: 100%
+}
+
+.article-date {
+  font-family: Arial;
+  font-size: 11px;
+  color: gray;
+  margin: 25px 5px;
+}
+
+.article-title {
+  font-family: Springville;
+  font-size: 48px;
+  margin: 5px 10px;
+  padding-right: 75px;
+}
+
+.article-author {
+  font-family: ACaslon;
+  font-size: 14px;
+  margin: 30px 5px;
 }
