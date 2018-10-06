@@ -59,15 +59,15 @@ export default class Homepage extends Component {
           autoPlay={true}
         >
           <div>
-            <img src={window.location.origin + '/image1.png'} />
+            <img src={window.location.origin + '/image1.png'} className="carousel-img" />
             {/* <p className="legend">image1</p> */}
           </div>
           <div>
-            <img src={window.location.origin + '/image2.png'} />
+            <img src={window.location.origin + '/image2.png'} className="carousel-img" />
             {/* <p className="legend">image2</p> */}
           </div>
           <div>
-            <img src={window.location.origin + '/image3.png'} />
+            <img src={window.location.origin + '/image3.png'} className="carousel-img" />
             {/* <p className="legend">image3</p> */}
           </div>
         </Carousel>

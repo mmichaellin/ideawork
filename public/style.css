@@ -14,8 +14,11 @@ body {
 
 .navbar {
   background: white;
-  padding: 5vh 12vw;
+  padding: 3vh 10vw;
   font-size: 11px;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
 }
 
 .navlink {
@@ -34,7 +37,7 @@ body {
 .hamburger {
   height: 2vh;
   float: right;
-  margin: 1.1vh 3vw 0vh 0vw;
+  margin: 1.1vh 0vw 0vh 0vw;
 }
 
 .footer {
@@ -100,6 +103,7 @@ html {
   column-count: 3;
   column-gap: 1em;
   padding: 10vh 10vw 0vh 0vw;
+  margin: 0vh 5vw;
 }
 
 .card {
@@ -123,7 +127,7 @@ html {
 
 .article-title {
   font-family: Springville;
-  font-size: 48px;
+  font-size: 3em;
   margin: 5px 10px;
   padding-right: 75px;
 }
@@ -132,4 +136,49 @@ html {
   font-family: ACaslon;
   font-size: 14px;
   margin: 30px 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    column-count: 2;
+    column-gap: 1em;
+    padding: 10vh 10vw 0vh 0vw;
+    margin: 0vh 2vw;
+  }
+  .navbar {
+    padding: 2vh 7vw;
+  }
+  .hamburger {
+    margin: 0.95vh 0vw 0vh 0vw;
+  }
+  .carousel-img {
+    height:32vh;
+    width:24vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    padding: 1vh 7vw;
+    height: 50px;
+  }
+  .logo {
+    height: 2vh;
+    margin: 9px 0px;
+  }
+  .article-title {
+    font-size: 2em;
+    margin: 3px 5px;
+    padding-right: 20px;
+  }
+  .hamburger {
+    margin: 1.2vh 0vw 0vh 0vw;
+  }
+  .footer {
+    font-size: 10px;
+  }
+  .carousel-img {
+    height:16vh;
+    width:12vw;
+  }
 }
