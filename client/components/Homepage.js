@@ -77,25 +77,61 @@ export default class Homepage extends Component {
               src={window.location.origin + '/image1.png'}
               className="carousel-img"
             />
-            {/* <p className="legend">image1</p> */}
+            <p className="legend">
+              <div id="carousel-h1">
+                Screening:
+                <br />
+                DVF Secret Agent Part 2
+              </div>
+              <div id="carousel-h3">October 15, 2017</div>
+              <div id="carousel-h5">
+                Join us for a private screening of DVF Secret Agent Part 2
+                <br />
+                with out special guest, Peter Lindberg.
+              </div>
+            </p>
           </div>
           <div>
             <img
               src={window.location.origin + '/image2.png'}
               className="carousel-img"
             />
-            {/* <p className="legend">image2</p> */}
+            <p className="legend">
+              <div id="carousel-h1">
+                Screening:
+                <br />
+                DVF Secret Agent Part 2
+              </div>
+              <div id="carousel-h3">October 15, 2017</div>
+              <div id="carousel-h5">
+                Join us for a private screening of DVF Secret Agent Part 2
+                <br />
+                with out special guest, Peter Lindberg.
+              </div>
+            </p>
           </div>
           <div>
             <img
               src={window.location.origin + '/image3.png'}
               className="carousel-img"
             />
-            {/* <p className="legend">image3</p> */}
+            <p className="legend">
+              <div id="carousel-h1">
+                Screening:
+                <br />
+                DVF Secret Agent Part 2
+              </div>
+              <div id="carousel-h3">October 15, 2017</div>
+              <div id="carousel-h5">
+                Join us for a private screening of DVF Secret Agent Part 2
+                <br />
+                with out special guest, Peter Lindberg.
+              </div>
+            </p>
           </div>
         </Carousel>
         <div className="masonry-container">
-          <Masonry breakPoints={[450, 800, 1400]}>
+          <Masonry breakPoints={[250, 800, 1400]}>
             {content.map((article, idx) => (
               <div key={idx} className="card">
                 <img
