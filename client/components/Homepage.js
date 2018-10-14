@@ -14,39 +14,52 @@ export default class Homepage extends Component {
         name: 'article6',
         date: 'FEBRUARY 10 2017',
         title: 'Bureaux exquisite delightful carefully curated soft power.',
-        author: 'LOREM IPSUM'
+        author: 'LOREM IPSUM',
+        sortDate: '02-10-2017'
       },
       {
         name: 'article3',
         date: 'JANUARY 21 2017',
         title: 'Esse airport veniam ryokan soft power',
-        author: 'LOREM IPSUM'
+        author: 'LOREM IPSUM',
+        sortDate: '01-21-2017'
       },
       {
         name: 'article5',
         date: 'FEBRUARY 2 2017',
         title: 'Sharp bureaux sleepy K-pop carefully curated.',
-        author: 'LOREM IPSUM'
+        author: 'LOREM IPSUM',
+        sortDate: '02-02-2017'
       },
       {
         name: 'article2',
-        date: 'January 18 2017',
+        date: 'JANUARY 18 2017',
         title: 'K-pop extraordinary.',
-        author: 'LOREM IPSUM'
+        author: 'LOREM IPSUM',
+        sortDate: '01-18-2017'
       },
       {
         name: 'article4',
         date: 'JANUARY 27 2017',
         title: 'St Moritz uniform Beams.',
-        author: 'LOREM IPSUM'
+        author: 'LOREM IPSUM',
+        sortDate: '01-27-2017'
       },
       {
         name: 'article1',
         date: 'JANUARY 12 2017',
         title: 'Artisanal iconic cutting-edge business class.',
-        author: 'LOREM IPSUM'
+        author: 'LOREM IPSUM',
+        sortDate: '01-12-2017'
       }
     ]
+    const parseDate = (obj) => {
+      let arr = obj.sortDate.split('-')
+      return new Date(arr[2], arr[0], arr[1])
+    }
+    content.sort((a,b)=>{
+      return parseDate(b) - parseDate(a)
+    })
     return (
       <div>
         <Navbar />
