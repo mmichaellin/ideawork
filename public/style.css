@@ -152,6 +152,43 @@ html {
   margin: 1vh 2.5vw;
 }
 
+.carousel-img {
+  object-fit: cover;
+  width: 1440px !important;
+  height: 580px !important;
+}
+
+.legend {
+  bottom: 25vh !important;
+  left: 55% !important;
+  width: 80vw !important;
+  height: 19vh;
+  border-radius: 0px !important;
+  background: rgb(0, 0, 0, 0) !important;
+  color: #fff;
+  padding: 0px !important;
+  font-size: 14px !important;
+  text-align: left !important;
+  opacity: 1 !important;
+}
+
+#carousel-h1 {
+  margin: 0px;
+  font-family: Springville;
+  font-size: 60px;
+  word-wrap: break-word;
+}
+#carousel-h3 {
+  margin: 1vh 0vw;
+  font-family: ACaslon;
+  font-size: 30px;
+}
+#carousel-h5 {
+  margin: 0px;
+  font-family: ACaslon;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 800px) {
   .navbar {
     padding: 2vh 7vw;
@@ -160,14 +197,24 @@ html {
     margin: 0.95vh 0vw 0vh 0vw;
   }
   .carousel-img {
-    height:32vh;
-    width:24vw;
   }
   .masonry-container {
     margin: 10vh 4.5vw;
   }
   .column {
     width: 45%;
+  }
+  #carousel-h1 {
+    font-size: 40px;
+  }
+  #carousel-h3 {
+    font-size: 20px;
+  }
+  #carousel-h5 {
+    font-size: 12px;
+  }
+  .legend {
+    bottom: 4vh !important;
   }
 }
 
@@ -192,7 +239,18 @@ html {
     font-size: 10px;
   }
   .carousel-img {
-    height:16vh;
-    width:12vw;
+    height: 281px !important;
+  }
+  #carousel-h1 {
+    font-size: 30px;
+  }
+  #carousel-h3 {
+    font-size: 20px;
+  }
+  #carousel-h5 {
+    font-size: 12px;
+  }
+  .legend {
+    bottom: 6vh !important;
   }
 }
