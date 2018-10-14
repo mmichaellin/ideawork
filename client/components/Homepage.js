@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Masonry from './Masonry'
 import {Carousel} from 'react-responsive-carousel'
 
 export default class Homepage extends Component {
@@ -53,11 +54,11 @@ export default class Homepage extends Component {
         sortDate: '01-12-2017'
       }
     ]
-    const parseDate = (obj) => {
+    const parseDate = obj => {
       let arr = obj.sortDate.split('-')
       return new Date(arr[2], arr[0], arr[1])
     }
-    content.sort((a,b)=>{
+    content.sort((a, b) => {
       return parseDate(b) - parseDate(a)
     })
     return (
@@ -72,27 +73,43 @@ export default class Homepage extends Component {
           autoPlay={true}
         >
           <div>
-            <img src={window.location.origin + '/image1.png'} className="carousel-img" />
+            <img
+              src={window.location.origin + '/image1.png'}
+              className="carousel-img"
+            />
             {/* <p className="legend">image1</p> */}
           </div>
           <div>
-            <img src={window.location.origin + '/image2.png'} className="carousel-img" />
+            <img
+              src={window.location.origin + '/image2.png'}
+              className="carousel-img"
+            />
             {/* <p className="legend">image2</p> */}
           </div>
           <div>
-            <img src={window.location.origin + '/image3.png'} className="carousel-img" />
+            <img
+              src={window.location.origin + '/image3.png'}
+              className="carousel-img"
+            />
             {/* <p className="legend">image3</p> */}
           </div>
         </Carousel>
-        <div className="container">
-          {content.map((article, idx) => (
-            <div key={idx} className='card' >
-              <img src={`${window.location.origin}/${article.name}.png`} className='article-img' />
-              <div className='article-date' >{article.date}</div>
-              <div className='article-title' >{article.title}</div>
-              <div className='article-author'>Presented by: <u>{article.author}</u></div>
-            </div>
-          ))}
+        <div className="masonry-container">
+          <Masonry breakPoints={[450, 800, 1400]}>
+            {content.map((article, idx) => (
+              <div key={idx} className="card">
+                <img
+                  src={`${window.location.origin}/${article.name}.png`}
+                  className="article-img"
+                />
+                <div className="article-date">{article.date}</div>
+                <div className="article-title">{article.title}</div>
+                <div className="article-author">
+                  Presented by: <u>{article.author}</u>
+                </div>
+              </div>
+            ))}
+          </Masonry>
         </div>
         <Footer />
       </div>

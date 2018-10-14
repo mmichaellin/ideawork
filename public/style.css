@@ -99,17 +99,9 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  column-count: 3;
-  column-gap: 1em;
-  padding: 10vh 10vw 0vh 0vw;
-  margin: 0vh 5vw;
-}
-
 .card {
   background-color: white;
   display: inline-block;
-  margin: 0vh 0vw 5vh 5vw;
   width: 100%;
   border-bottom: 2px solid rgb(222, 222, 222);
 }
@@ -138,13 +130,29 @@ html {
   margin: 30px 5px;
 }
 
+.masonry-container {
+  margin: 10vh 7.5vw;
+}
+
+.masonry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+  width: 100%;
+  margin: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-grow: 1;
+  margin: 1vh 2.5vw;
+}
+
 @media only screen and (max-width: 800px) {
-  .container {
-    column-count: 2;
-    column-gap: 1em;
-    padding: 10vh 10vw 0vh 0vw;
-    margin: 0vh 2vw;
-  }
   .navbar {
     padding: 2vh 7vw;
   }
@@ -154,6 +162,12 @@ html {
   .carousel-img {
     height:32vh;
     width:24vw;
+  }
+  .masonry-container {
+    margin: 10vh 4.5vw;
+  }
+  .column {
+    width: 45%;
   }
 }
 
