@@ -1,10 +1,12 @@
 @import url("carousel.css");
+
 @font-face {
   font-family: ACaslon;
   src: url("./ACaslonPro-Regular.otf") format("opentype");
   font-family: Springville;
   src: url("./Springville-Regular3.otf") format("opentype");
 }
+
 body {
   margin: 0;
   background: white;
@@ -66,7 +68,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .underline:before {
   content: "";
   position: absolute;
@@ -83,7 +84,6 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-
 .underline:hover:before, .underline:focus:before, .underline:active:before {
   left: 0;
   right: 0;
@@ -103,11 +103,11 @@ html {
   background-color: white;
   display: inline-block;
   width: 100%;
-  border-bottom: 2px solid #dedede;
+  border-bottom: 2px solid rgb(222, 222, 222);
 }
 
 .article-img {
-  width: 100%;
+  width: 100%
 }
 
 .article-date {
@@ -178,13 +178,11 @@ html {
   font-size: 60px;
   word-wrap: break-word;
 }
-
 #carousel-h3 {
   margin: 1vh 0vw;
   font-family: ACaslon;
   font-size: 30px;
 }
-
 #carousel-h5 {
   margin: 0px;
   font-family: ACaslon;
@@ -195,79 +193,64 @@ html {
   .navbar {
     padding: 2vh 7vw;
   }
-
   .hamburger {
     margin: 0.95vh 0vw 0vh 0vw;
   }
-
+  .carousel-img {
+  }
   .masonry-container {
     margin: 10vh 4.5vw;
   }
-
   .column {
     width: 45%;
   }
-
   #carousel-h1 {
     font-size: 40px;
   }
-
   #carousel-h3 {
     font-size: 20px;
   }
-
   #carousel-h5 {
     font-size: 12px;
   }
-
   .legend {
     bottom: 4vh !important;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .navbar {
     padding: 1vh 7vw;
     height: 50px;
   }
-
   .logo {
     height: 2vh;
     margin: 9px 0px;
   }
-
   .article-title {
     font-size: 2em;
     margin: 3px 5px;
     padding-right: 20px;
   }
-
   .hamburger {
     margin: 1.2vh 0vw 0vh 0vw;
   }
-
   .footer {
     font-size: 10px;
   }
-
   .carousel-img {
     height: 281px !important;
   }
-
   #carousel-h1 {
     font-size: 30px;
   }
-
   #carousel-h3 {
     font-size: 20px;
   }
-
   #carousel-h5 {
     font-size: 12px;
   }
-
   .legend {
     bottom: 6vh !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
